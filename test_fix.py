@@ -5,7 +5,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 import time
 
 
-@pytest.fixture(params=["chrome", "firfox"], scope="class")   # the fixture using N no of files, we use conftest.py
+@pytest.fixture(params=["chrome", "firfox"], scope="class")
 def setup(request):
 
     if request.param == "Chrome":
