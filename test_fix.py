@@ -17,13 +17,3 @@ def setup(request):
     time.sleep(5)
     wb_driver.close()
     wb_driver.quit()
-
-
-# @pytest.fixture(scope="class")   # the fixture using N no of files, we use conftest.py
-# def setup(request):
-#     ch_driver = webdriver.Chrome(ChromeDriverManager().install())
-#     request.cls.driver = ch_driver
-#     yield
-#     time.sleep(5)
-#     ch_driver.close()
-#     ch_driver.quit()
